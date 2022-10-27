@@ -28,7 +28,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <input type={'file'}/>
+        <input onChange={handleFileSelect} type={'file'}/>
         {file&&<p>Selected file: {file.name}</p>}
       </main>
 
